@@ -80,7 +80,7 @@ int Compare(){
     char Edate[] = {User.cardExpirationDate[3],User.cardExpirationDate[4],User.cardExpirationDate[0],User.cardExpirationDate[1]};
     int expiration_date;
     sscanf(Edate,"%d",&expiration_date);
-    printf("");
+    printf("%d",expiration_date);
     if(transaction_date>expiration_date){
         printf("The transaction is Declined");
         return 0;
